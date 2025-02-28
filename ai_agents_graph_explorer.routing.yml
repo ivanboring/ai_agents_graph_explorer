@@ -1,0 +1,16 @@
+ai_agent_graph_explorer.view:
+  path: '/admin/config/ai/agents/explore/graph'
+  defaults:
+    _controller: '\Drupal\ai_agents_graph_explorer\Controller\GraphExplorer::graphView'
+  methods: [GET]
+  requirements:
+    _permission: 'use the agent graph explorer'
+
+ai_agent_graph_explorer.api_get_agents:
+  path: '/admin/api/agents_graph_explorer/get_agents'
+  defaults:
+    _controller: '\Drupal\ai_agents_graph_explorer\Controller\Api::getAgents'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+
