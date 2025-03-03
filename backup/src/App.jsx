@@ -7,6 +7,7 @@ import {
 } from '@xyflow/react';
 import StepEdge from './edges/StepEdge.jsx';
 import AgentNode from './nodes/AgentNode.jsx';
+import '../tailwind-config.js';
 
 import '@xyflow/react/dist/style.css';
 
@@ -47,8 +48,8 @@ export default function App() {
         ];
 
         const updatedEdges = [
-          { id: 'e1-2', source: '1', target: '2', label: 'Starting' },
-          { id: 'e1-3', source: '1', target: '3', label: 'Waiting' }
+          { id: 'e1-2', source: '1', target: '2' },
+          { id: 'e1-3', source: '1', target: '3' }
         ];
 
         setNodes(updatedNodes);
